@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "com.example.myhomeapplication.app-mergeDebugResources-48:/layout/fragment_home.xml",
+        "source": "com.example.myhomeapplication.app-main-51:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.myhomeapplication.app-mergeDebugResources-48:/layout/activity_agents.xml",
+        "source": "com.example.myhomeapplication.app-main-51:/layout/activity_agents.xml"
+    },
+    {
+        "merged": "com.example.myhomeapplication.app-mergeDebugResources-48:/layout/app_bar_main.xml",
+        "source": "com.example.myhomeapplication.app-main-51:/layout/app_bar_main.xml"
+    },
+    {
+        "merged": "com.example.myhomeapplication.app-mergeDebugResources-48:/layout/fragment_apartments.xml",
+        "source": "com.example.myhomeapplication.app-main-51:/layout/fragment_apartments.xml"
+    },
+    {
+        "merged": "com.example.myhomeapplication.app-mergeDebugResources-48:/layout/fragment_notifications.xml",
+        "source": "com.example.myhomeapplication.app-main-51:/layout/fragment_notifications.xml"
+    },
+    {
+        "merged": "com.example.myhomeapplication.app-mergeDebugResources-48:/layout/activity_agentsignup.xml",
+        "source": "com.example.myhomeapplication.app-main-51:/layout/activity_agentsignup.xml"
+    },
+    {
+        "merged": "com.example.myhomeapplication.app-mergeDebugResources-48:/layout/fragment_agents.xml",
+        "source": "com.example.myhomeapplication.app-main-51:/layout/fragment_agents.xml"
+    },
+    {
+        "merged": "com.example.myhomeapplication.app-mergeDebugResources-48:/layout/nav_header_main.xml",
+        "source": "com.example.myhomeapplication.app-main-51:/layout/nav_header_main.xml"
+    },
+    {
+        "merged": "com.example.myhomeapplication.app-mergeDebugResources-48:/layout/fragment_owners.xml",
+        "source": "com.example.myhomeapplication.app-main-51:/layout/fragment_owners.xml"
+    },
+    {
+        "merged": "com.example.myhomeapplication.app-mergeDebugResources-48:/layout/content_main.xml",
+        "source": "com.example.myhomeapplication.app-main-51:/layout/content_main.xml"
+    },
+    {
+        "merged": "com.example.myhomeapplication.app-mergeDebugResources-48:/layout/activity_splashscreen.xml",
+        "source": "com.example.myhomeapplication.app-main-51:/layout/activity_splashscreen.xml"
+    },
+    {
+        "merged": "com.example.myhomeapplication.app-mergeDebugResources-48:/layout/fragment_houses.xml",
+        "source": "com.example.myhomeapplication.app-main-51:/layout/fragment_houses.xml"
+    },
+    {
+        "merged": "com.example.myhomeapplication.app-mergeDebugResources-48:/layout/activity_main.xml",
+        "source": "com.example.myhomeapplication.app-main-51:/layout/activity_main.xml"
+    }
+]

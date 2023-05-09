@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myhomeapplication.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_agents"
+        android:name="com.example.myhomeapplication.ui.agents.AgentsFragment"
+        android:label="@string/menu_agents"
+        tools:layout="@layout/fragment_agents" />
+
+    <fragment
+        android:id="@+id/nav_owners"
+        android:name="com.example.myhomeapplication.ui.owners.OwnersFragment"
+        android:label="@string/menu_owners"
+        tools:layout="@layout/fragment_owners" />
+
+    <fragment
+        android:id="@+id/nav_apartments"
+        android:name="com.example.myhomeapplication.ui.apartments.ApartmentsFragment"
+        android:label="@string/menu_apartments"
+        tools:layout="@layout/fragment_apartments" />
+
+    <fragment
+        android:id="@+id/nav_houses"
+        android:name="com.example.myhomeapplication.ui.houses.HousesFragment"
+        android:label="@string/menu_houses"
+        tools:layout="@layout/fragment_houses" />
+
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.example.myhomeapplication.ui.houses.HousesFragment"
+        android:label="@string/menu_notifications"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
