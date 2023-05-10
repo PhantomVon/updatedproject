@@ -4,7 +4,7 @@ package com.example.myhomeapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -20,11 +20,11 @@ public final class FragmentHousesBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView textHouses;
+  public final ImageView imageView2;
 
-  private FragmentHousesBinding(@NonNull ConstraintLayout rootView, @NonNull TextView textHouses) {
+  private FragmentHousesBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageView2) {
     this.rootView = rootView;
-    this.textHouses = textHouses;
+    this.imageView2 = imageView2;
   }
 
   @Override
@@ -54,13 +54,13 @@ public final class FragmentHousesBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.text_houses;
-      TextView textHouses = ViewBindings.findChildViewById(rootView, id);
-      if (textHouses == null) {
+      id = R.id.imageView2;
+      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView2 == null) {
         break missingId;
       }
 
-      return new FragmentHousesBinding((ConstraintLayout) rootView, textHouses);
+      return new FragmentHousesBinding((ConstraintLayout) rootView, imageView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

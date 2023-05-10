@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.myhomeapplication.app-mergeDebugResources-47:/values-w1240dp-v13/values-w1240dp-v13.xml",
+            "outputFile": "com.example.myhomeapplication.app-mergeDebugResources-51:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/emobilis/Downloads/HomeApplication-main/app/src/main/res/values-w1240dp/dimens.xml",
+                    "source": "/home/emobilis/Downloads/Project-main/app/src/main/res/values-w1240dp/dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",

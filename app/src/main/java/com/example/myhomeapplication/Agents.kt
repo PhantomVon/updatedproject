@@ -1,6 +1,6 @@
 package com.example.myhomeapplication
 
-class User {
+class Agents {
     var name:String = ""
     var email:String = ""
     var phoneNumber:String = ""

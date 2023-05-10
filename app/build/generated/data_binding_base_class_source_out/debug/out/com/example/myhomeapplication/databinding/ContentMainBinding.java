@@ -28,10 +28,22 @@ public final class ContentMainBinding implements ViewBinding {
   public final ImageView apartmentIcon;
 
   @NonNull
-  public final CardView btnExit;
+  public final CardView cardAgents;
 
   @NonNull
-  public final CardView cardAgents;
+  public final CardView cardApartments;
+
+  @NonNull
+  public final CardView cardExit;
+
+  @NonNull
+  public final CardView cardHouses;
+
+  @NonNull
+  public final CardView cardNotifications;
+
+  @NonNull
+  public final CardView cardOwners;
 
   @NonNull
   public final ImageView exitIcon;
@@ -67,7 +79,9 @@ public final class ContentMainBinding implements ViewBinding {
   public final ImageView ownersIcon;
 
   private ContentMainBinding(@NonNull RelativeLayout rootView, @NonNull ImageView agentsIcon,
-      @NonNull ImageView apartmentIcon, @NonNull CardView btnExit, @NonNull CardView cardAgents,
+      @NonNull ImageView apartmentIcon, @NonNull CardView cardAgents,
+      @NonNull CardView cardApartments, @NonNull CardView cardExit, @NonNull CardView cardHouses,
+      @NonNull CardView cardNotifications, @NonNull CardView cardOwners,
       @NonNull ImageView exitIcon, @NonNull ImageView houseIcon, @NonNull TextView mtvAgents,
       @NonNull TextView mtvApartment, @NonNull TextView mtvExit, @NonNull TextView mtvHouses,
       @NonNull TextView mtvNotifications, @NonNull TextView mtvOwners, @NonNull TextView mtvTitle,
@@ -75,8 +89,12 @@ public final class ContentMainBinding implements ViewBinding {
     this.rootView = rootView;
     this.agentsIcon = agentsIcon;
     this.apartmentIcon = apartmentIcon;
-    this.btnExit = btnExit;
     this.cardAgents = cardAgents;
+    this.cardApartments = cardApartments;
+    this.cardExit = cardExit;
+    this.cardHouses = cardHouses;
+    this.cardNotifications = cardNotifications;
+    this.cardOwners = cardOwners;
     this.exitIcon = exitIcon;
     this.houseIcon = houseIcon;
     this.mtvAgents = mtvAgents;
@@ -129,15 +147,39 @@ public final class ContentMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnExit;
-      CardView btnExit = ViewBindings.findChildViewById(rootView, id);
-      if (btnExit == null) {
-        break missingId;
-      }
-
       id = R.id.cardAgents;
       CardView cardAgents = ViewBindings.findChildViewById(rootView, id);
       if (cardAgents == null) {
+        break missingId;
+      }
+
+      id = R.id.cardApartments;
+      CardView cardApartments = ViewBindings.findChildViewById(rootView, id);
+      if (cardApartments == null) {
+        break missingId;
+      }
+
+      id = R.id.cardExit;
+      CardView cardExit = ViewBindings.findChildViewById(rootView, id);
+      if (cardExit == null) {
+        break missingId;
+      }
+
+      id = R.id.cardHouses;
+      CardView cardHouses = ViewBindings.findChildViewById(rootView, id);
+      if (cardHouses == null) {
+        break missingId;
+      }
+
+      id = R.id.cardNotifications;
+      CardView cardNotifications = ViewBindings.findChildViewById(rootView, id);
+      if (cardNotifications == null) {
+        break missingId;
+      }
+
+      id = R.id.cardOwners;
+      CardView cardOwners = ViewBindings.findChildViewById(rootView, id);
+      if (cardOwners == null) {
         break missingId;
       }
 
@@ -207,9 +249,10 @@ public final class ContentMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ContentMainBinding((RelativeLayout) rootView, agentsIcon, apartmentIcon, btnExit,
-          cardAgents, exitIcon, houseIcon, mtvAgents, mtvApartment, mtvExit, mtvHouses,
-          mtvNotifications, mtvOwners, mtvTitle, notificationIcon, ownersIcon);
+      return new ContentMainBinding((RelativeLayout) rootView, agentsIcon, apartmentIcon,
+          cardAgents, cardApartments, cardExit, cardHouses, cardNotifications, cardOwners, exitIcon,
+          houseIcon, mtvAgents, mtvApartment, mtvExit, mtvHouses, mtvNotifications, mtvOwners,
+          mtvTitle, notificationIcon, ownersIcon);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

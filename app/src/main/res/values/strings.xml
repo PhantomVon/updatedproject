@@ -14,4 +14,7 @@
     <string name="menu_owners">Owners</string>
     <string name="menu_notifications">Notifications</string>
     <string name="menu_exit">Exit Now</string>
+    <string name="title_activity_agents_trial">AgentsActivityTrial</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
 </resources>

@@ -4,8 +4,7 @@ package com.example.myhomeapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -21,16 +20,11 @@ public final class FragmentAgentsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView imageView2;
+  public final ListView mListAgents;
 
-  @NonNull
-  public final TextView textAgents;
-
-  private FragmentAgentsBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageView2,
-      @NonNull TextView textAgents) {
+  private FragmentAgentsBinding(@NonNull ConstraintLayout rootView, @NonNull ListView mListAgents) {
     this.rootView = rootView;
-    this.imageView2 = imageView2;
-    this.textAgents = textAgents;
+    this.mListAgents = mListAgents;
   }
 
   @Override
@@ -60,19 +54,13 @@ public final class FragmentAgentsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.imageView2;
-      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView2 == null) {
+      id = R.id.mListAgents;
+      ListView mListAgents = ViewBindings.findChildViewById(rootView, id);
+      if (mListAgents == null) {
         break missingId;
       }
 
-      id = R.id.text_agents;
-      TextView textAgents = ViewBindings.findChildViewById(rootView, id);
-      if (textAgents == null) {
-        break missingId;
-      }
-
-      return new FragmentAgentsBinding((ConstraintLayout) rootView, imageView2, textAgents);
+      return new FragmentAgentsBinding((ConstraintLayout) rootView, mListAgents);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".AgentsSignUp">
 
     <EditText
         android:id="@+id/mEdtName"
@@ -14,65 +14,64 @@
         android:ems="10"
         android:hint="Enter Name"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/mEdtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <EditText
         android:id="@+id/mEdtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginTop="27dp"
         android:ems="10"
         android:hint="Enter email"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/mEdtPhone"
-        app:layout_constraintEnd_toEndOf="@+id/mEdtPhone" />
-
+        app:layout_constraintStart_toStartOf="@+id/mEdtName"
+        app:layout_constraintTop_toBottomOf="@+id/mEdtName" />
 
     <EditText
         android:id="@+id/mEdtPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="Enter phone number"
         android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/mEdtPassword"
-        app:layout_constraintEnd_toEndOf="@+id/mEdtPassword" />
+        app:layout_constraintStart_toStartOf="@+id/mEdtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/mEdtEmail" />
 
     <EditText
         android:id="@+id/mEdtPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="23dp"
         android:ems="10"
         android:hint="Enter password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/mEdtConfirmPassword"
-        app:layout_constraintStart_toStartOf="@+id/mEdtConfirmPassword" />
+        app:layout_constraintEnd_toEndOf="@+id/mEdtConfirmPassword" />
 
     <EditText
         android:id="@+id/mEdtConfirmPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginTop="98dp"
         android:ems="10"
         android:hint="Confirm password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/mBtnView"
-        app:layout_constraintEnd_toEndOf="@+id/mBtnView" />
+        app:layout_constraintStart_toStartOf="@+id/mBtnSave"
+        app:layout_constraintTop_toBottomOf="@+id/mEdtPhone" />
 
     <Button
         android:id="@+id/mBtnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="44dp"
         android:text="Save"
-        app:layout_constraintStart_toStartOf="@+id/mEdtConfirmPassword"
+        app:layout_constraintEnd_toStartOf="@+id/mBtnView"
         app:layout_constraintTop_toBottomOf="@+id/mEdtConfirmPassword" />
 
     <Button
@@ -80,8 +79,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="86dp"
-        android:layout_marginBottom="170dp"
         android:text="View"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mBtnSave"
         app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

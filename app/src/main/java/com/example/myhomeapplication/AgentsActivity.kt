@@ -1,22 +1,50 @@
 package com.example.myhomeapplication
 
+import android.annotation.SuppressLint
 import android.app.ProgressDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
+import android.widget.ListView
+import android.widget.Toast
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
 class AgentsActivity : AppCompatActivity() {
-    lateinit var edtName: EditText
-    lateinit var edtEmail: EditText
-    lateinit var edtPhoneNumber: EditText
-    lateinit var edtPassword: EditText
-    lateinit var edtConfirmPassword: EditText
-    lateinit var btnSave: Button
-    lateinit var btnView: Button
+    lateinit var listAgents:ListView
+    lateinit var agents:ArrayList<Agents>
+    lateinit var adapter:CustomAdapter
     lateinit var progressDialog: ProgressDialog
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_agents)
+        setContentView(R.layout.fragment_agents)
+        listAgents = findViewById(R.id.mListAgents)
+        agents = ArrayList()
+        adapter = CustomAdapter(this,agents)
+        progressDialog = ProgressDialog(this)
+        progressDialog.setTitle("Loading")
+        progressDialog.setMessage("Please wait...")
+        // Create a reference to the database to load data
+        var ref = FirebaseDatabase.getInstance().getReference().child("Agents")
+        // Show the progress as you load data
+        progressDialog.show()
+        ref.addValueEventListener(object : ValueEventListener{
+            override fun onDataChange(snapshot: DataSnapshot) {
+                agents.clear()
+                for(data in snapshot.children){
+                    var agent = data.getValue(Agents::class.java)
+                    agents.add(agent!!)
+                }
+                adapter.notifyDataSetChanged()
+                progressDialog.dismiss()
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(this@AgentsActivity,"DB is inaccessible", Toast.LENGTH_LONG).show()
+            }
+        })
+        listAgents.adapter = adapter
     }
 }

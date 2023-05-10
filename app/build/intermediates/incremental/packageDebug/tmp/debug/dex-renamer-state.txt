@@ -1,4 +1,7 @@
-#Sat May 06 11:30:17 EAT 2023
-base.0=/home/emobilis/Downloads/HomeApplication-main/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Wed May 10 14:11:17 EAT 2023
+base.0=/home/emobilis/Downloads/Project-main/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+base.1=/home/emobilis/Downloads/Project-main/app/build/intermediates/dex/debug/mergeDexDebug/classes2.dex
 path.0=classes.dex
+path.1=classes2.dex
 renamed.0=classes.dex
+renamed.1=classes2.dex

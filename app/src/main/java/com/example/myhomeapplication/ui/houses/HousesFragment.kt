@@ -28,10 +28,6 @@ class HousesFragment : Fragment() {
         _binding = FragmentHousesBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHouses
-        housesViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
     }
 

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.myhomeapplication.app-mergeDebugResources-47:/values-h720dp-v13/values-h720dp-v13.xml",
+            "outputFile": "com.example.myhomeapplication.app-mergeDebugResources-51:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/emobilis/.gradle/caches/transforms-3/18f3b450431a18d1b8782590c78f4b48/transformed/appcompat-1.6.1/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "source": "/home/emobilis/.gradle/caches/transforms-3/66780b6d0ab0ea838791606c6a5077a2/transformed/appcompat-1.6.1/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

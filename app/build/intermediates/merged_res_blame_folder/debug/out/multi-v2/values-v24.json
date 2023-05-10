@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.myhomeapplication.app-mergeDebugResources-47:/values-v24/values-v24.xml",
+            "outputFile": "com.example.myhomeapplication.app-mergeDebugResources-51:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/home/emobilis/.gradle/caches/transforms-3/18f3b450431a18d1b8782590c78f4b48/transformed/appcompat-1.6.1/res/values-v24/values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
-                    }
-                },
-                {
-                    "source": "/home/emobilis/.gradle/caches/transforms-3/be087d330048d0fda2a87dcd2023b741/transformed/media-1.0.0/res/values-v24/values-v24.xml",
+                    "source": "/home/emobilis/.gradle/caches/transforms-3/3ff4f7e2483217c2249e4647e11d1ac5/transformed/media-1.0.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -31,7 +21,17 @@
                     }
                 },
                 {
-                    "source": "/home/emobilis/.gradle/caches/transforms-3/3ae538e1fe403a40770f3de720fc776f/transformed/material-1.8.0/res/values-v24/values-v24.xml",
+                    "source": "/home/emobilis/.gradle/caches/transforms-3/66780b6d0ab0ea838791606c6a5077a2/transformed/appcompat-1.6.1/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "/home/emobilis/.gradle/caches/transforms-3/89b7a0bd49320cab66024258f169f1c4/transformed/material-1.9.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",

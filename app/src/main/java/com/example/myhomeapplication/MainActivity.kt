@@ -48,9 +48,15 @@ class MainActivity : AppCompatActivity() {
         }
         cardAgents = findViewById(R.id.cardAgents)
         cardAgents.setOnClickListener {
-            var intent = Intent(this,AgentsActivity::class.java)
+            var intent = Intent(this,AgentsSignUp::class.java)
             startActivity(intent)
         }
+        cardHouses = findViewById(R.id.cardHouses)
+        cardHouses.setOnClickListener {
+            var intent = Intent(this,HousesActivity::class.java)
+            startActivity(intent)
+        }
+
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
@@ -79,4 +85,4 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    }
+}
